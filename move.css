@@ -1,0 +1,61 @@
+
+.container-move{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 24px;
+  background-color: #414141;
+  border-radius: 12px;
+
+  perspective: 200px;
+
+}
+
+.move-x{
+  animation: moveX 4s linear infinite; 
+}
+
+.move-y{
+  animation: moveY 4s linear infinite; 
+}
+
+.move-z{
+  animation: moveZ 4s linear infinite; 
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(25px);
+  }
+  100% {
+    transform: translateX(-25px);
+  }
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(25px);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+
+@keyframes moveZ {
+  0% {
+    transform: translateZ(-100px);
+  }
+  50% {
+    transform: translateZ(50px);
+  }
+  100% {
+    transform: translateZ(-100px);
+  }
+}

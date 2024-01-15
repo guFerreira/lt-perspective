@@ -1,0 +1,50 @@
+.container-rotate{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 50px;
+  padding: 24px;
+  background-color: #414141;
+  border-radius: 12px;
+
+  perspective: 1000px;
+}
+
+.rotate-x{
+  animation: rotateX 4s linear infinite; 
+}
+
+.rotate-y{
+  animation: rotateY 4s linear infinite; 
+}
+
+.rotate-z{
+  animation: rotateZ 4s linear infinite; 
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotateY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateZ {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
